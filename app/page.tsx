@@ -28,25 +28,25 @@ const carouselCards = [
 
   {
     title: "MENTALIDADE",
-    image: "/transformacao.png",
+    image: "/mentalidade.png",
     text: "Troque a mente fraca por uma mentalidade de execução."
   },
 
   {
     title: "DESEMPENHO",
-    image: "/evolucao.png",
+    image: "/desempenho.png",
     text: "Aumente energia, produtividade e consistência."
   },
 
   {
     title: "EVOLUÇÃO",
-    image: "/desempenho.png",
+    image: "/evolucao.png",
     text: "Transforme corpo, mente, hábitos e aparência."
   },
 
   {
     title: "TRANSFORMAÇÃO",
-    image: "/logo.png",
+    image: "/transformacao.png",
     text: "Saia da versão que promete e entre na versão que executa."
   },
 

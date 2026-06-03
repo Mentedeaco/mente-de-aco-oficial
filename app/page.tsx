@@ -46,7 +46,7 @@ const carouselCards = [
 
   {
     title: "TRANSFORMAÇÃO",
-    image: "/mentalidade.png",
+    image: "/logo.png",
     text: "Saia da versão que promete e entre na versão que executa."
   },
 

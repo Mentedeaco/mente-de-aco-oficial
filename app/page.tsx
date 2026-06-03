@@ -45,12 +45,6 @@ const carouselCards = [
   },
 
   {
-    title: "TRANSFORMAÇÃO",
-    image: "/transformacao.png",
-    text: "Saia da versão que promete e entre na versão que executa."
-  },
-
-  {
     title: "FOCO",
     image: "/foco.png",
     text: "Recupere sua atenção em um mundo feito para te distrair."

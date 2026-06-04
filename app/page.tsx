@@ -237,48 +237,102 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="relative flex min-h-screen items-center justify-center px-6 pt-24 text-center">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#0f172a_0%,#020617_38%,#000_78%)]" />
-        <div className="absolute inset-0 opacity-[0.08] bg-[linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] bg-[size:90px_90px]" />
-        <div className="absolute left-1/2 top-[-260px] h-[780px] w-[780px] -translate-x-1/2 rounded-full bg-blue-600/25 blur-[170px] glow-pulse" />
+{/* HERO */}
+<section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-28">
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#0f172a_0%,#020617_38%,#000_78%)]" />
+  <div className="absolute inset-0 opacity-[0.08] bg-[linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] bg-[size:90px_90px]" />
+  <div className="absolute left-1/2 top-[-260px] h-[780px] w-[780px] -translate-x-1/2 rounded-full bg-blue-600/25 blur-[170px] glow-pulse" />
 
-        <motion.div
-          initial={{ opacity: 0, y: 45 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
-          className="relative z-10 mx-auto max-w-5xl"
-        >
-          <p className="mb-5 text-xs uppercase tracking-[0.45em] text-blue-400">
-            Protocolo de evolução mental
+  <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-14 md:grid-cols-2">
+    <motion.div
+      initial={{ opacity: 0, y: 45 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.9 }}
+      className="text-center md:text-left"
+    >
+      <div className="mb-6 inline-flex rounded-full border border-blue-500/30 bg-blue-600/10 px-5 py-2 text-xs font-black uppercase tracking-[0.25em] text-blue-300">
+        Método de evolução mental
+      </div>
+
+      <h1 className="text-5xl font-black uppercase leading-[0.92] md:text-7xl">
+        Pare de esperar motivação.
+        <span className="block text-blue-500">
+          Construa disciplina.
+        </span>
+      </h1>
+
+      <p className="mt-7 max-w-2xl text-lg leading-relaxed text-zinc-300 md:text-xl">
+        O <strong className="text-white">Mente De Aço</strong> é um sistema criado para quem está cansado de
+        procrastinar, perder tempo com distrações e sentir que está desperdiçando
+        o próprio potencial.
+      </p>
+
+      <p className="mt-5 max-w-2xl text-base leading-relaxed text-zinc-400">
+        Desenvolva foco, rotina, autocontrole, mentalidade forte, produtividade,
+        evolução pessoal e a clareza necessária para parar de negociar com sua
+        versão fraca.
+      </p>
+
+      <div className="mt-8 grid max-w-xl grid-cols-3 gap-3 text-center">
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+          <p className="text-2xl font-black text-blue-400">+6.300</p>
+          <p className="text-xs text-zinc-500">seguidores</p>
+        </div>
+
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+          <p className="text-2xl font-black text-blue-400">24h</p>
+          <p className="text-xs text-zinc-500">acesso</p>
+        </div>
+
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+          <p className="text-2xl font-black text-blue-400">100%</p>
+          <p className="text-xs text-zinc-500">digital</p>
+        </div>
+      </div>
+
+      <button
+        onClick={scrollToOffer}
+        className="mt-9 rounded-2xl bg-blue-600 px-12 py-5 text-lg font-black transition hover:-translate-y-1 hover:bg-blue-500 hover:shadow-[0_0_55px_rgba(37,99,235,.65)]"
+      >
+        Desbloquear meu acesso
+      </button>
+
+      <p className="mt-4 text-sm text-zinc-500">
+        Compra segura • Acesso imediato • Pagamento único
+      </p>
+    </motion.div>
+
+    <motion.div
+      initial={{ opacity: 0, scale: 0.92, y: 40 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      transition={{ duration: 1, delay: 0.2 }}
+      className="relative mx-auto w-full max-w-[440px]"
+    >
+      <div className="absolute inset-0 rounded-[2.5rem] bg-blue-600/30 blur-[90px]" />
+
+      <div className="relative overflow-hidden rounded-[2.5rem] border border-blue-500/30 bg-black shadow-[0_0_100px_rgba(37,99,235,.25)]">
+        <Image
+          src="/transformacao.png"
+          alt="Mente De Aço Transformação"
+          width={900}
+          height={1200}
+          className="h-full w-full object-cover"
+          priority
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/20" />
+
+        <div className="absolute bottom-0 p-7">
+          <p className="text-xs uppercase tracking-[0.35em] text-blue-300">
+            Transformação real
           </p>
-
-          <h1 className="text-5xl font-black uppercase leading-[0.95] md:text-8xl">
-            Transforme sua mente antes que ela destrua você.
-          </h1>
-
-          <p className="mx-auto mt-7 max-w-3xl text-base leading-relaxed text-zinc-300 md:text-xl">
-            O Mente De Aço é um sistema para quem está cansado de prometer mudança,
-            viver preso em distrações e sentir que está desperdiçando o próprio potencial.
-          </p>
-
-          <div className="mx-auto mt-10 aspect-video max-w-3xl overflow-hidden rounded-[2rem] border border-blue-500/25 bg-black/60 shadow-[0_0_80px_rgba(37,99,235,.18)]">
-            <div className="flex h-full items-center justify-center bg-[radial-gradient(circle_at_center,#1d4ed8_0%,#020617_45%,#000_100%)]">
-              <div className="text-center">
-                <Image src="/logo.png" alt="Logo Mente De Aço" width={120} height={120} className="mx-auto mb-4 opacity-80" />
-                <p className="text-sm uppercase tracking-[0.35em] text-blue-300">
-                  Espaço do vídeo cinematic
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <button
-            onClick={scrollToOffer}
-            className="mt-9 rounded-2xl bg-blue-600 px-12 py-5 text-lg font-black transition hover:-translate-y-1 hover:bg-blue-500 hover:shadow-[0_0_55px_rgba(37,99,235,.65)]"
-          >
-            Desbloquear meu acesso
-          </button>
-        </motion.div>
+          <h2 className="mt-3 text-3xl font-black uppercase">
+            Mente forte. Rotina forte. Vida forte.
+          </h2>
+        </div>
+      </div>
+    </motion.div>
+  </div>
       </section>
 
       <section className="relative overflow-hidden border-y border-white/10 bg-black py-24">

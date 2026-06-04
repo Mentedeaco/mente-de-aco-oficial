@@ -319,7 +319,7 @@ export default function Home() {
       initial={{ opacity: 0, scale: 0.94, y: 35 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ duration: 1, delay: 0.2 }}
-      className="relative mx-auto hidden w-full max-w-[420px]"
+      className="relative mx-auto w-full max-w-[420px] lg:ml-12"
     >
       <div className="absolute inset-0 rounded-[2.5rem] bg-blue-600/30 blur-[90px]" />
 

@@ -330,7 +330,7 @@ export default function Home() {
           width={1200}
           height={900}
           priority
-          className="h-[560px] w-full object-cover object-center"
+          className="h-[560px] w-full object-contain object-center"
         />
 
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />

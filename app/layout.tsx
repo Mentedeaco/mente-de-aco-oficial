@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-title: "Vynexa Studio | Sites Profissionais",
+title: "Vynexa Studio | Mente De Aço",
 description: "Criamos sites modernos, rápidos e profissionais para empresas que querem vender mais e crescer online.",
 };
 

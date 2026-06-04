@@ -319,7 +319,7 @@ export default function Home() {
       initial={{ opacity: 0, scale: 0.94, y: 35 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ duration: 1, delay: 0.2 }}
-      className="relative mx-auto hidden w-full max-w-[500px]"
+      className="relative mx-auto hidden w-full max-w-[420px]"
     >
       <div className="absolute inset-0 rounded-[2.5rem] bg-blue-600/30 blur-[90px]" />
 
@@ -330,7 +330,7 @@ export default function Home() {
           width={1200}
           height={900}
           priority
-          className="h-[640px] w-full object-cover object-center"
+          className="h-[500px] w-full object-cover object-center"
         />
 
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />

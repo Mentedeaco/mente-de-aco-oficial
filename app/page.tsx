@@ -243,7 +243,7 @@ export default function Home() {
   <div className="absolute inset-0 opacity-[0.08] bg-[linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] bg-[size:90px_90px]" />
   <div className="absolute left-1/2 top-[-260px] h-[780px] w-[780px] -translate-x-1/2 rounded-full bg-blue-600/25 blur-[170px]" />
 
-  <div className="relative z-10 mx-auto grid min-h-[calc(100vh-7rem)] max-w-7xl items-center gap-20 md:grid-cols-2">
+  <div className="relative z-10 mx-auto grid min-h-[calc(100vh-7rem)] max-w-7xl items-center gap-32 md:grid-cols-2">
     <motion.div
       initial={{ opacity: 0, y: 45 }}
       animate={{ opacity: 1, y: 0 }}
@@ -319,7 +319,7 @@ export default function Home() {
       initial={{ opacity: 0, scale: 0.94, y: 35 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ duration: 1, delay: 0.2 }}
-      className="relative mx-auto w-full max-w-[420px] lg:ml-12"
+      className="relative mx-auto w-full max-w-[420px] lg:ml-24"
     >
       <div className="absolute inset-0 rounded-[2.5rem] bg-blue-600/30 blur-[90px]" />
 

@@ -527,7 +527,7 @@ export default function Home() {
 </div>
 
 <a
-  href={checkoutLink}
+  href="//pay.kiwify.com.br/uYXorgg"
   className="block rounded-2xl bg-blue-600 px-10 py-5 text-center text-lg font-black transition hover:-translate-y-1 hover:bg-blue-500 hover:shadow-[0_0_60px_rgba(37,99,235,.65)]"
 >
   ⚔️ Começar minha evolução
